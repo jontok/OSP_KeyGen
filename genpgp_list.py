@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import gnupg
 import os
+from rich import print
 
 
 gpg = gnupg.GPG('/usr/bin/gpg')
@@ -51,4 +52,4 @@ for email in mailList:
 
     key = ""
 
-print("Done")
+print("[bold magenta]Done[/bold magenta]")
