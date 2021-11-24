@@ -12,6 +12,7 @@ pw = id[0] + "1"
 
 
 key_input_data  = gpg.gen_key_input(
+    name_real = id[0],
     name_email = email,
     passphrase = pw,
     key_type = 'RSA',
