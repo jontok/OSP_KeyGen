@@ -1,13 +1,12 @@
 #!/usr/bin/python3
 import gnupg
 import os
-from rich import print
 
 
 gpg = gnupg.GPG('/usr/bin/gpg')
 gpg.encoding = 'utf-8'
 
-file = input("Enter the full path to list! ")
+file = input("Enter the full file name: ")
 
 listFile = open(file, "r")
 list = listFile.read()
@@ -52,4 +51,4 @@ for email in mailList:
 
     key = ""
 
-print("[bold magenta]Done[/bold magenta]")
+print("Done")

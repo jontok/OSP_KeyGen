@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 import gnupg
 import os
-from rich import print
 
 
 gpg = gnupg.GPG('/usr/bin/gpg')
@@ -23,8 +22,8 @@ key_input_data  = gpg.gen_key_input(
 
 key = gpg.gen_key(key_input_data)
 
-print("[red]Passphrase:[/red] " + pw)
-print("[yellow]Fingerprint:[/yellow] " + key.fingerprint)
+print("Passphrase: " + pw)
+print("Fingerprint: " + key.fingerprint)
 ascii_armored_public_keys = gpg.export_keys(key.fingerprint)
 ascii_armored_private_keys = gpg.export_keys(
     keyids=key.fingerprint,
@@ -39,4 +38,4 @@ pri = open(id[0] +"/private-" + id[0] + ".asc", "a")
 pri.write(ascii_armored_private_keys)
 pri.close()
 
-print("[bold green]Done[/bold green]")
+print("Done")
