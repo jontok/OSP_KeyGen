@@ -1,4 +1,5 @@
-# OSP_KeyGen
+# PythonPGPKeyGeneration
+
 Public and Privat key generation with python_gnupg
 
 ## Installation des Python GPG Schlüssel Generator(Linux) 
