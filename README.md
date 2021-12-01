@@ -35,7 +35,7 @@ Navigieren sie Lokal oder via SecureShell in das OSP_KeyGen-Verzeichnis und füh
 
  
 
-Folgen sie den Anweisungen und geben sie die E-Mail Adresse des/der SchülerInn oder des/der LehrerInn in die Konsole ein. 
+Folgen sie den Anweisungen und geben sie die E-Mail Adresse in die Konsole ein. 
 
  
 
@@ -56,6 +56,13 @@ Die Ausgabe der Konsole beinhaltet das Passwort und den Fingerabdruck für die g
 Es können auch direkt mehrere Schlüssel erstellt werden. Dafür muss eine Liste mit im .txt Format angelegt werden die wie Folgt aussieht: 
 
  
+ ```
+ testone@domain.dom,
+ testtwo@domain.dom,
+ testthree@domain.dom,
+ testfour@domain.dom
+ 
+ ```
 
 Im Anschluss muss die Datei im Verzeichnis OSP_KeyGen/ abgelegt. 
 
